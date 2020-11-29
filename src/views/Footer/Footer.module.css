@@ -1,0 +1,125 @@
+.footer {
+  color: #ddd;
+  background: #4c4c4c;
+  width: 100%;
+  padding: 40px;
+  font-size: 13px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px 0;
+}
+
+.bottom {
+  background: #424242;
+  width: 100%;
+  padding: 15px 40px;
+  margin: 0 auto;
+  font-size: 13px;
+  color: #aaa;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px 0;
+}
+
+.name {
+  color: #eee;
+}
+
+.aboutHeader {
+  font-size: 24px;
+  font-family: 'Segoe UI', 'Roboto', 'Ubuntu', sans-serif;
+  color: #fff;
+}
+
+.aboutText {
+  margin: 0 0 15px 0;
+  line-height: 21px;
+  width: 220px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactsHeader {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.contactsRow {
+  width: 220px;
+  margin: 0 0 15px 0;
+}
+
+.icon {
+  width: 14px;
+  height: auto;
+  float: left;
+  margin: 1px 0 0 0;
+}
+
+.strong {
+  color: #fff;
+}
+
+.contactsText {
+  margin: -2px 0 0 22px;
+}
+
+.help {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 710px) {
+  .help {
+    display: none;
+  }
+}
+
+.help > p {
+  cursor: pointer;
+}
+
+.help > p:hover {
+  color: #eee;
+}
+
+.payments {
+
+}
+
+.payment {
+  width: 28px;
+  height: auto;
+}
+
+.payment + .payment {
+  margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+  .payment {
+    display: none;
+  }
+}
+
+@media (max-width: 544px) {
+  .footer {
+    display: flex !important;
+  }
+
+  .top {
+    display: flex !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .top {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: stretch;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}

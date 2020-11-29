@@ -1,0 +1,92 @@
+.sidebar {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.sort {
+  margin-top: 20px;
+}
+
+.popular {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.popular * a {
+  text-decoration: none;
+  color: #666;
+  width: 100%;
+}
+
+.popularImg {
+  width: 66px;
+  height: 66px;
+  padding: 4px;
+  background: #fff;
+  border-radius: 2px;
+  border: 1px solid #e0e0e0;
+  transition: all 200ms ease-in-out;
+  outline: none;
+}
+
+.popularImg:hover {
+  background: #169fe6;
+  border: 1px solid #169fe6
+}
+
+.popularItem {
+  padding: 18px;
+  margin-bottom: 15px;
+  background-color: #f2f2f2;
+  box-shadow: inset 0 -1px 0 0 rgba(0,0,0, 0.05);
+  border-radius: 2px;
+  color: #666;
+}
+
+.popularLink {
+  display: flex;
+}
+
+.popularInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 10px;
+}
+
+.popularInfo:visited {
+  text-decoration: none;
+  outline: 0;
+  transition: color 0.1s ease-in-out;
+}
+
+@media (max-width: 1000px) {
+  .sidebar {
+    flex-direction: row-reverse;
+    margin: 20px 0 0;
+    gap: 40px;
+  }
+
+  .inf1 {
+    margin-top: 20px;
+  }
+
+  .cart {
+    height: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+
+  .inf1 {
+    align-self: center;
+    width: 100%;
+  }
+}
