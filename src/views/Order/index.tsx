@@ -10,7 +10,7 @@ export const Order: React.FC<RouteComponentProps> = (x) => {
   const cart = useStore<CartStoreData>(CartStore);
   const [isSubmitted, setSubmitted] = useState<boolean>(false);
 
-  if (!isSubmitted) {
+  if (isSubmitted) {
     setTimeout(() => {
       x.history.push('/');
     }, 3000);
