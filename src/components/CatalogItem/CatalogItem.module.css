@@ -69,6 +69,15 @@
   .itemLink {
     max-width: 180px;
   }
+
+  .itemImg {
+    width: 180px;
+    height: 170px;
+  }
+
+  .description {
+    max-width: 180px;
+  }
 }
 
 @media (max-width: 440px) {

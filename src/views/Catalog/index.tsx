@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
 import styles from './Catalog.module.css';
-import { CatalogEntity, CatalogStore, CatalogStoreData, Tag } from 'store/CatalogItemsStore';
+import { CatalogStore, CatalogStoreData, Tag } from 'store/CatalogItemsStore';
 import { useStore } from 'effector-react';
-import { CatalogSortData, CatalogSortStore } from 'store/CatalogSortStore';
 import { CatalogItem } from 'components/CatalogItem';
 import { Sidebar } from 'views/Sidebar';
 import { RouteComponentProps } from 'react-router-dom';
@@ -18,7 +17,7 @@ export const Catalog: React.FC<RouteComponentProps<CatalogParams>> = (x) => {
   console.log(category);
 
   useEffect(() => {
-    CatalogSortStore.setOption('popularity');
+    CatalogStore.filterTags([category]);
   }, []);
 
   return (

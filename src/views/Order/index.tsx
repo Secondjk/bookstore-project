@@ -10,7 +10,7 @@ export const Order: React.FC<RouteComponentProps> = (x) => {
   const cart = useStore<CartStoreData>(CartStore);
   const [isSubmitted, setSubmitted] = useState<boolean>(false);
 
-  if (isSubmitted) {
+  if (!isSubmitted) {
     setTimeout(() => {
       x.history.push('/');
     }, 3000);
@@ -79,13 +79,16 @@ export const Order: React.FC<RouteComponentProps> = (x) => {
           </div>
           <div className="custom-control custom-checkbox">
             <input type="checkbox" className="custom-control-input" id="save-info" />
-            <label className="custom-control-label" htmlFor="save-info">Сохранить информацию для последующих покупок</label>
+            <label
+              className="custom-control-label" htmlFor="save-info">Сохранить информацию для последующих покупок</label>
           </div>
           <hr />
           <h4 className="mb-3">Способ оплаты</h4>
           <div className="d-block my-3">
             <div className="custom-control custom-radio">
-              <input id="credit" name="paymentMethod" type="radio" className="custom-control-input" defaultChecked required />
+              <input
+                id="credit"
+                name="paymentMethod" type="radio" className="custom-control-input" defaultChecked required />
               <label className="custom-control-label" htmlFor="credit">Онлайн банковской картой</label>
             </div>
             <div className="custom-control custom-radio">

@@ -3,7 +3,7 @@ import styles from './Navigation.module.css';
 import { NavLink } from 'components/NavbarLink';
 import { NavigationControls } from 'db/NavigationControls';
 
-export const Navigation: React.FC = (x) => {
+export const Navigation: React.FC = () => {
   return (
     <nav className={styles.navigation}>
       <ul className={styles.navList}>
@@ -14,3 +14,5 @@ export const Navigation: React.FC = (x) => {
     </nav>
   );
 };
+
+

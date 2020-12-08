@@ -7,7 +7,6 @@ import { Form } from 'react-bootstrap';
 import { CatalogSortData, CatalogSortStore } from 'store/CatalogSortStore';
 import { useStore } from 'effector-react';
 import { Link } from 'react-router-dom';
-import { Catalog } from '../Catalog';
 
 interface SidebarProps {
   className?: string
@@ -20,7 +19,7 @@ export const Sidebar: React.FC<SidebarProps> = (x) => {
     <div className={cn(styles.sidebar, x?.className)}>
       <div className={styles.inf1}>
         <h4>Корзина товаров</h4>
-        <Cart />
+        <Cart showButtons={true} />
       </div>
       <div className={styles.sort}>
         <h4>Сортировка товаров</h4>

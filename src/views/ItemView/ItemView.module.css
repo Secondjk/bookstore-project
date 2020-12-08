@@ -4,7 +4,7 @@
 
 .itemView {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: stretch;
   padding: 0 40px;
   overflow: hidden;

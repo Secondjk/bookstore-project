@@ -12,7 +12,7 @@ const CarouselB: React.FC<RouteComponentProps> = (x) => {
     '/',
     '/about',
   ];
-  const isAllowed = !notAllowedPages.includes(x?.location.pathname);
+  const isAllowed = true;
 
   const handleSelect = (selectedIndex: number) => {
     setIndex(selectedIndex);

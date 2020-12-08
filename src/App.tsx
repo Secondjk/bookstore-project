@@ -24,7 +24,6 @@ export const App = () => {
           <Switch>
             <Route path='/contacts' component={Contact} />
             <Route path='/catalog/item/:id' component={ItemView} />
-            {/*{<Route path='/order' component={ItemView} />}*/}
             <Route path='/catalog/:category' component={Catalog} />
             <Route path='/catalog' component={Catalog} />
             <Route path='/about' component={About} />
