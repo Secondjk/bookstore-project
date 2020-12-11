@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/bookstore-project/static/css/main.e77e228b.chunk.css",
+    "main.js": "/bookstore-project/static/js/main.3065571e.chunk.js",
+    "main.js.map": "/bookstore-project/static/js/main.3065571e.chunk.js.map",
+    "runtime-main.js": "/bookstore-project/static/js/runtime-main.2cab6653.js",
+    "runtime-main.js.map": "/bookstore-project/static/js/runtime-main.2cab6653.js.map",
+    "static/css/2.1a02f21c.chunk.css": "/bookstore-project/static/css/2.1a02f21c.chunk.css",
+    "static/js/2.029719b1.chunk.js": "/bookstore-project/static/js/2.029719b1.chunk.js",
+    "static/js/2.029719b1.chunk.js.map": "/bookstore-project/static/js/2.029719b1.chunk.js.map",
+    "index.html": "/bookstore-project/index.html",
+    "static/css/2.1a02f21c.chunk.css.map": "/bookstore-project/static/css/2.1a02f21c.chunk.css.map",
+    "static/css/main.e77e228b.chunk.css.map": "/bookstore-project/static/css/main.e77e228b.chunk.css.map",
+    "static/js/2.029719b1.chunk.js.LICENSE.txt": "/bookstore-project/static/js/2.029719b1.chunk.js.LICENSE.txt",
+    "static/media/news2.a9ea2c08.png": "/bookstore-project/static/media/news2.a9ea2c08.png",
+    "static/media/news3.737ef24b.png": "/bookstore-project/static/media/news3.737ef24b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2cab6653.js",
+    "static/css/2.1a02f21c.chunk.css",
+    "static/js/2.029719b1.chunk.js",
+    "static/css/main.e77e228b.chunk.css",
+    "static/js/main.3065571e.chunk.js"
+  ]
+}
