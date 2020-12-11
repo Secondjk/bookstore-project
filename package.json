@@ -2,16 +2,13 @@
   "name": "bookstore",
   "version": "1.0.0",
   "private": true,
+  "homepage": "http://secondjk.github.io/bookstore-project",
   "dependencies": {
-    "@egjs/react-infinitegrid": "^3.0.6",
-    "@types/react-router-dom": "^5.1.6",
     "bootstrap": "^4.5.3",
     "classnames": "^2.2.6",
     "csstype": "^3.0.5",
     "effector": "^21.6.0",
     "effector-react": "^21.0.8",
-    "flat-carousel": "^0.0.1",
-    "keen-slider": "^5.3.5",
     "react": "^17.0.0",
     "react-bootstrap": "^1.4.0",
     "react-dom": "^17.0.0",
@@ -23,6 +20,7 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "@types/react-router-dom": "^5.1.6",
     "@typescript-eslint/eslint-plugin": "^4.8.1",
     "@typescript-eslint/parser": "^4.8.1",
     "eslint": "^7.13.0",
@@ -30,12 +28,15 @@
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-react": "^7.18.3",
     "eslint_d": "^9.1.2",
+    "gh-pages": "^3.1.0",
     "typescript": "^4.0.5"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
